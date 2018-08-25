@@ -65,6 +65,33 @@ int main() {
    cout << "new value is : " << *pnFruitsB << endl;
 
 
+   char texts[] = {"hello"};
+
+   for(int i = 0; i < sizeof(texts); i++){
+	   cout << i << ": " <<  texts[i] << endl;   // null terminator of the string
+	   if((int)texts[i] == 0 ){
+		   cout << "Null terminator " << (int)texts[i] << " at index " << i << endl;
+	   }
+   }
+
+
+	   int k = 0;
+
+	   while(true){
+
+		   if(texts[k] == 0){
+			   break;
+		   }
+
+		   cout << texts[k] << flush;
+		   k++;
+	   }
+
+
+
+
+
+
 
 
 	return 0;
